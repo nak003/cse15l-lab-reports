@@ -2,7 +2,10 @@
 --- 
 *This in italic*
 * list 1
-* list 2
 
+
+**Make change**
+
+_New line_ 
 
 End of the line
