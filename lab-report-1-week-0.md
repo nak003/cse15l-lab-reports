@@ -1,3 +1,3 @@
-# Week 0 Screenshot
+# Lab report 1
 This is the screenshot
 ![Image](Screen-Shot.png)
