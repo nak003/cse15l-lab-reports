@@ -96,3 +96,12 @@ After this, password is not required when logging into the server.
 
 >Optimizing remote running 
 
+There is easiler way to make a copy of a file and run in the remote server by semicolon and quotes. 
+
+Multiple commands can be run in same line with semicolon. 
+Quotes at the end of the ``` ssh```  allows to run command.
+
+- After making edit in file on the computer, enter ```scp WhereAmI.java cs15lfa22zz@ieng6.ucsd.edu"~/```to copy the file to the server 
+- Run the file by entering ```ssh cs15lfa22zz@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"``` 
+
+![image](optimizing.png)
