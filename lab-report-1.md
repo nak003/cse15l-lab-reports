@@ -2,6 +2,7 @@
 ## Remote Access and Filesystem
 
 > Installing VS Code 
+
 - Go to  https://code.visualstudio.com/
 - Download Visual Studio Code in computer
 - There are MacOS and Window versions (Download appropriate version)
@@ -9,7 +10,9 @@
 
 This is MacOS version downloaded and opened.
 ![Image](VS-Code.png)
-___
+
+---
+
 > Remotely Connecting 
 
 You can connect the remote server by ssh (The Secure Shell)
@@ -23,7 +26,8 @@ If it is first time logging in, it could ask **"Are you sure you want to continu
 After successful login, temrminal is now connected to the server.
 It will show status like below image. 
 ![image](Connected.png)
-___ 
+
+--- 
 >Trying commands 
 
 There are multiple commands that could be used in the terminal. 
@@ -40,6 +44,7 @@ When it is run in terminal, it would look like this.
 ---
 
 >Moving file with ```scp```
+
 - Create WhereAmI.java (new java file) in the computer with below code
 ```class WhereAmI {
   public static void main(String[] args) {
