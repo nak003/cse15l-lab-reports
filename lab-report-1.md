@@ -65,7 +65,7 @@ It will print like this below
 scp WhereAmI.java cs15lfa22zz@ieng6.ucsd.edu:~/
 ```
 - Log into server 
-- Complie and run java file in the server
+- Complie and run java file in the server 
 ![image](server.png)
 
 Notice that WhereAmI.java file is added in the directory.
