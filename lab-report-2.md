@@ -69,3 +69,45 @@ For last screenshot, I wrote wrong url and it showed "404 Not Found!"
     - If this is changed to 's' it would work but if it is different, it will still show "404 Not Found!"
 
 ## Part 2 - Bugs in ArrayExample and ListExample 
+**ArrayExample Bug - reversedInPlace** 
+
+ for reversedInPlace Method, **failure inducing input** is {1,2,3,4,5}. 
+ ![image](test.png)
+ This should return {5,4,3,2,1}. However, it failed the test.
+![image](symptom.png)
+It was expected <2> but it was <4> for the **symptom**. 
+![image](symptom1.png)
+The **bug**, problem of the code, was that the last half of the indexes are getting the already changed list. For example, the test failed because the array was {5,4,3,4,5}. 
+
+To fix this bug, changed the code so that the for loop only runs to the half of the list. 
+
+New Code: 
+```  
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length/ 2; i += 1) {
+      int previous = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length-i-1] = previous;
+    }
+  }
+```  
+
+**ListExample Bug - merge** 
+
+for merge Method, **failure inducing input** is {x,y} for list1 and {a,z} for list2
+![image](test1.png)
+This should return {a,b,x,y}. However, it failed the test.
+![image](testfail.png)
+It returned out of memory error for the **symptom**. 
+![image](testwitherror.png)
+The **bug**, problem of the code, was that the last while loop increments the index1 instead of index2. Because index2 is not incremented, it was in the infinte loop since index2 will be always smaller than the list2.size. 
+
+To fix the bug, I changed index1 to index2 inside of while(index2 < list2.size()). 
+
+New Code:
+```  
+while(index2 < list2.size()) {
+      result.add(list2.get(index2));
+      index2 += 1;
+}
+```  
