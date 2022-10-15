@@ -68,4 +68,4 @@ For last screenshot, I wrote wrong url and it showed "404 Not Found!"
 - parameter[0] is equal to "string" so it also causes error because it either add or search the string when the parameter[0] is equal to "s". 
     - If this is changed to 's' it would work but if it is different, it will still show "404 Not Found!"
 
-## Part 2 - Bugs in Arraylist 
+## Part 2 - Bugs in ArrayExample and ListExample 
