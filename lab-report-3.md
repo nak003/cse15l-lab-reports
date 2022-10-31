@@ -27,6 +27,7 @@ find . -iname *AB*
 ```
 ![image](ab.png)
 
+
 This finds any file or directory with name AB but it is not sensitive to capitalization so it showed files and directories with ab. 
 
 ---
